@@ -394,6 +394,8 @@
     </target>
     <target name="do-dist" depends="init,compile,compile-jsps,-pre-dist,-do-dist-with-manifest,-do-dist-without-manifest"/>
     <target name="library-inclusion-in-manifest" depends="init" if="dist.ear.dir">
+        <basename property="included.lib.file.reference.mysql-connector-java-5.1.5-bin.jar" file="${file.reference.mysql-connector-java-5.1.5-bin.jar}"/>
+        <copy-ear-war file="${file.reference.mysql-connector-java-5.1.5-bin.jar}" propname="included.lib.file.reference.mysql-connector-java-5.1.5-bin.jar.X"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.6}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.5}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.4}" todir="${build.web.dir.real}/WEB-INF/lib"/>
@@ -412,10 +414,13 @@
         <copy file="${libs.jstl11.classpath.libfile.2}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jstl11.classpath.libfile.1}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <mkdir dir="${build.web.dir.real}/META-INF"/>
-        <manifest file="${build.web.dir.real}/META-INF/MANIFEST.MF" mode="update"/>
+        <manifest file="${build.web.dir.real}/META-INF/MANIFEST.MF" mode="update">
+            <attribute name="Class-Path" value="${included.lib.file.reference.mysql-connector-java-5.1.5-bin.jar} "/>
+        </manifest>
         <delete dir="${dist.ear.dir}/temp"/>
     </target>
     <target name="library-inclusion-in-archive" depends="init" unless="dist.ear.dir">
+        <copy file="${file.reference.mysql-connector-java-5.1.5-bin.jar}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.6}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.5}" todir="${build.web.dir.real}/WEB-INF/lib"/>
         <copy file="${libs.jsf-runtime.classpath.libfile.4}" todir="${build.web.dir.real}/WEB-INF/lib"/>

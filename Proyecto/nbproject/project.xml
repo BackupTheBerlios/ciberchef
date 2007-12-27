@@ -25,6 +25,10 @@
                 <library files="2">
                     <file>${libs.jstl11.classpath}</file>
                 </library>
+                <library files="1">
+                    <file>${file.reference.mysql-connector-java-5.1.5-bin.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
             </web-module-libraries>
             <web-module-additional-libraries>
                 <library files="6">
