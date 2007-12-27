@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="height: 150px; width: 400px; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="header">
+        <ui:image binding="#{_header.image1}" id="image1" style="left: 0px; top: 0px; position: absolute" url="/resources/logo.gif"/>
+    </f:subview>
+</div>

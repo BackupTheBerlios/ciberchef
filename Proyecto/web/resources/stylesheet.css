@@ -1,0 +1,80 @@
+/* Style rules to make data tables look better */
+
+html,body{margin:0;padding:0}
+
+/* Barra de navegación superior */
+.topnavigation {
+  position: relative;
+  background-color: #333;
+  height: 25px;
+  width: 100%;
+  top: 0;
+}
+
+/* Cabecera */
+.header {
+  position: relative;
+  height: 150px;
+}
+
+/* Contenedor */
+.section {
+  position: relative;
+  background-color: #68a7e6;
+  width: 100%;
+  height: 400px;
+  border: 1px solid #9cf;
+  border-width: 2px 0 2px 0;
+}
+
+/* Creditos */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+/******************************************************************************/
+
+.list-header {
+  background-color: #eeeeee;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.list-paging-header {
+  background-color: white;
+}
+
+.list-paging-footer {
+  background-color: white;
+}
+
+.list-row-even { 
+}
+
+.list-row-odd { 
+  background-color: #eeeeee;
+}
+
+/* Style rules for message severity levels */
+
+.infoMessage {
+  color: black;
+}
+
+.warnMessage {
+  color: orange;
+  font-weight: bold;
+}
+
+.errorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+.fatalMessage {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
