@@ -20,7 +20,6 @@ import com.sun.rave.web.ui.component.StaticText;
 import com.sun.rave.web.ui.component.TextArea;
 import com.sun.rave.web.ui.component.TextField;
 import javax.faces.FacesException;
-
 /**
  * <p>Page bean that corresponds to a similarly named JSP page.  This
  * class contains component definitions (and initialization code) for

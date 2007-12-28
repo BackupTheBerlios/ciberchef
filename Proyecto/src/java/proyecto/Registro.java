@@ -9,7 +9,6 @@ package proyecto;
 import java.sql.*;
 import java.util.*;
 
-
 import com.sun.rave.web.ui.appbase.AbstractPageBean;
 import com.sun.rave.web.ui.component.Body ;
 import com.sun.rave.web.ui.component.Button;
