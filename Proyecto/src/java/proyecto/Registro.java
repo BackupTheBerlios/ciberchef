@@ -101,14 +101,14 @@ public class Registro extends AbstractPageBean {
         this.form1 = f;
     }
 
-    private PanelLayout layoutPanel1 = new PanelLayout();
+    private PanelLayout panelReg1 = new PanelLayout();
 
-    public PanelLayout getLayoutPanel1() {
-        return layoutPanel1;
+    public PanelLayout getPanelReg1() {
+        return panelReg1;
     }
 
-    public void setLayoutPanel1(PanelLayout pl) {
-        this.layoutPanel1 = pl;
+    public void setPanelReg1(PanelLayout pl) {
+        this.panelReg1 = pl;
     }
 
     private TextField nombreReg1 = new TextField();
@@ -141,24 +141,14 @@ public class Registro extends AbstractPageBean {
         this.nickReg1 = tf;
     }
 
-    private TextField email1 = new TextField();
+    private TextField emailReg1 = new TextField();
 
-    public TextField getEmail1() {
-        return email1;
+    public TextField getEmailReg1() {
+        return emailReg1;
     }
 
-    public void setEmail1(TextField tf) {
-        this.email1 = tf;
-    }
-
-    private Button enviarReg1 = new Button();
-
-    public Button getEnviarReg1() {
-        return enviarReg1;
-    }
-
-    public void setEnviarReg1(Button b) {
-        this.enviarReg1 = b;
+    public void setEmailReg1(TextField tf) {
+        this.emailReg1 = tf;
     }
 
     private Calendar nacimientoReg1 = new Calendar();
@@ -171,6 +161,16 @@ public class Registro extends AbstractPageBean {
         this.nacimientoReg1 = c;
     }
 
+    private PasswordField contraseñaReg1 = new PasswordField();
+
+    public PasswordField getContraseñaReg1() {
+        return contraseñaReg1;
+    }
+
+    public void setContraseñaReg1(PasswordField pf) {
+        this.contraseñaReg1 = pf;
+    }
+
     private PasswordField contraseñaRepReg1 = new PasswordField();
 
     public PasswordField getContraseñaRepReg1() {
@@ -181,14 +181,54 @@ public class Registro extends AbstractPageBean {
         this.contraseñaRepReg1 = pf;
     }
 
-    private PasswordField contraseñaReg1 = new PasswordField();
+    private Button enviarReg1 = new Button();
 
-    public PasswordField getContraseñaReg1() {
-        return contraseñaReg1;
+    public Button getEnviarReg1() {
+        return enviarReg1;
     }
 
-    public void setContraseñaReg1(PasswordField pf) {
-        this.contraseñaReg1 = pf;
+    public void setEnviarReg1(Button b) {
+        this.enviarReg1 = b;
+    }
+
+    private StaticText staticText1 = new StaticText();
+
+    public StaticText getStaticText1() {
+        return staticText1;
+    }
+
+    public void setStaticText1(StaticText st) {
+        this.staticText1 = st;
+    }
+
+    private StaticText staticText2 = new StaticText();
+
+    public StaticText getStaticText2() {
+        return staticText2;
+    }
+
+    public void setStaticText2(StaticText st) {
+        this.staticText2 = st;
+    }
+
+    private PanelLayout tituloReg1 = new PanelLayout();
+
+    public PanelLayout getTituloReg1() {
+        return tituloReg1;
+    }
+
+    public void setTituloReg1(PanelLayout pl) {
+        this.tituloReg1 = pl;
+    }
+
+    private StaticText staticText3 = new StaticText();
+
+    public StaticText getStaticText3() {
+        return staticText3;
+    }
+
+    public void setStaticText3(StaticText st) {
+        this.staticText3 = st;
     }
     
     // </editor-fold>

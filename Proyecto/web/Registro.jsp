@@ -9,26 +9,37 @@
                 </ui:head>
                 <ui:body binding="#{Registro.body1}" id="body1" style="-rave-layout: grid">
                     <ui:form binding="#{Registro.form1}" id="form1">
-                        <div class="header" style="left: 0px; top: 24px; position: absolute">
-                            <jsp:directive.include file="header.jspf"/>
-                        </div>
-                        <div class="footer" style="left: 0px; top: 648px; position: absolute">
-                            <jsp:directive.include file="footer.jspf"/>
-                        </div>
-                        <div class="topnavigation" style="left: 0px; top: 0px; position: absolute">
+                        <div class="topnavigation" style="">
                             <jsp:directive.include file="topnavigation.jspf"/>
                         </div>
-                        <div class="section" style="height: 477px; left: 0px; top: 168px; position: absolute">
-                            <ui:panelLayout binding="#{Registro.layoutPanel1}" id="layoutPanel1" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 430px; left: 264px; top: 24px; position: absolute; width: 350px; -rave-layout: grid">
-                                <ui:textField binding="#{Registro.nombreReg1}" id="nombreReg1" label="Nombre" style="right: 50px; top: 48px; position: absolute" valueChangeListener="#{Registro.nombreReg_processValueChange}"/>
-                                <ui:textField binding="#{Registro.apellidosReg1}" id="apellidosReg1" label="Apellidos" style="right: 50px; top: 96px; position: absolute"/>
-                                <ui:textField binding="#{Registro.nickReg1}" id="nickReg1" label="Nick" style="right: 50px; top: 144px; position: absolute"/>
-                                <ui:textField binding="#{Registro.email1}" id="email1" label="Email" style="right: 50px; top: 192px; position: absolute"/>
-                                <ui:button binding="#{Registro.enviarReg1}" id="enviarReg1" style="left: 150px; top: 384px; position: absolute" text="Enviar"/>
-                                <ui:calendar binding="#{Registro.nacimientoReg1}" columns="15" id="nacimientoReg1" label="Fecha de Nacimiento" style="left: 0px; top: 336px; position: absolute"/>
-                                <ui:passwordField binding="#{Registro.contraseñaRepReg1}" id="contraseñaRepReg1" label="Repite Contraseña" style="left: 0px; top: 288px; position: absolute"/>
-                                <ui:passwordField binding="#{Registro.contraseñaReg1}" id="contraseñaReg1" label="Contraseña" style="left: 0px; top: 240px; position: absolute"/>
+                        <div class="header">
+                            <jsp:directive.include file="header.jspf"/>
+                        </div>
+                        <div class="section" style="height: 510px">
+                            <ui:panelLayout binding="#{Registro.panelReg1}" id="panelReg1" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 250px; top: 30px; position: absolute; width: 400px; -rave-layout: grid">
+                                <ui:textField binding="#{Registro.nombreReg1}" columns="30" id="nombreReg1" label="Nombre"
+                                    style="right: 50px; top: 240px; position: absolute" valueChangeListener="#{Registro.nombreReg_processValueChange}"/>
+                                <ui:textField binding="#{Registro.apellidosReg1}" columns="30" id="apellidosReg1" label="Apellidos" style="right: 50px; top: 288px; position: absolute"/>
+                                <ui:textField binding="#{Registro.nickReg1}" columns="30" id="nickReg1" label="Nick" required="true" style="right: 50px; top: 48px; position: absolute"/>
+                                <ui:textField binding="#{Registro.emailReg1}" columns="30" id="emailReg1" label="Email" required="true" style="right: 50px; top: 192px; position: absolute"/>
+                                <ui:calendar binding="#{Registro.nacimientoReg1}" columns="25" id="nacimientoReg1" label="Fecha de Nacimiento" style="right: 50px; top: 336px; position: absolute"/>
+                                <ui:passwordField binding="#{Registro.contraseñaReg1}" columns="30" id="contraseñaReg1" label="Contraseña" required="true" style="right: 50px; top: 96px; position: absolute"/>
+                                <ui:passwordField binding="#{Registro.contraseñaRepReg1}" columns="30" id="contraseñaRepReg1" label="Repite Contraseña"
+                                    required="true" style="right: 50px; top: 144px; position: absolute"/>
+                                <ui:button binding="#{Registro.enviarReg1}" id="enviarReg1"
+                                    style="border-width: 3px; border-style: solid; right: 50px; top: 420px; position: absolute" text="Enviar"/>
+                                <ui:staticText binding="#{Registro.staticText1}" id="staticText1"
+                                    style="font-style: oblique; left: 48px; top: 430px; position: absolute" text="Campos obligatorios"/>
+                                <ui:staticText binding="#{Registro.staticText2}" id="staticText2"
+                                    style="color: red; font-size: 24px; left: 30px; top: 430px; position: absolute" text="*"/>
                             </ui:panelLayout>
+                            <ui:panelLayout binding="#{Registro.tituloReg1}" id="tituloReg1" style="background-color: black; height: 40px; left: 280px; top: 20px; width: 128px">
+                                <ui:staticText binding="#{Registro.staticText3}" id="staticText3"
+                                    style="color: white; font-size: 24px; font-weight: bold; height: 24px; right: 5px; top: 5px; position: absolute" text="Regístrate"/>
+                            </ui:panelLayout>
+                        </div>
+                        <div class="footer">
+                            <jsp:directive.include file="footer.jspf"/>
                         </div>
                     </ui:form>
                 </ui:body>
