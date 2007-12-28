@@ -24,6 +24,8 @@ import com.sun.rave.web.ui.component.TextField;
 import javax.faces.FacesException;
 import javax.faces.component.html.HtmlPanelGrid;
 import javax.faces.event.ValueChangeEvent;
+import java.sql.*;
+import java.util.*;
 
 /**
  * <p>Page bean that corresponds to a similarly named JSP page.  This
@@ -202,6 +204,9 @@ public class Login extends AbstractPageBean {
     public Login() {
     }
     
+        Connection con;
+        Statement st;
+        ResultSet rs;
     /**
      * <p>Callback method that is called whenever a page is navigated to,
      * either directly via a URL, or indirectly via page navigation.
@@ -217,6 +222,7 @@ public class Login extends AbstractPageBean {
     public void init() {
         // Perform initializations inherited from our superclass
         super.init();
+
         // Perform application initialization that must complete
         // *before* managed components are initialized
         // TODO - add your own initialiation code here
@@ -293,13 +299,16 @@ public class Login extends AbstractPageBean {
     public String btn_login_action() {
         // TODO: Process the button click action. Return value is a navigation
         // case name where null will return to the same page.
-        if (user.getText().equals("guest") && pass.getText().equals("guest")) {
+        this.abrirConexion ();
+        if (pass.getText().equals(this.consultaUsu((String)user.getText()))) {
+            this.cerrarConexion();
             return "login";
-        } 
+        }
         errorlogin.setVisible(true);
+        this.cerrarConexion();
         return null;
     }
-
+ 
     public void user_processValueChange(ValueChangeEvent event) {
         // TODO: Replace with your code
         
@@ -310,5 +319,45 @@ public class Login extends AbstractPageBean {
         
         return "case1";
     }
-}
+  
+    //Crea una conexión a la base de datos
+    public void abrirConexion() {
+        try {
+            String userName="enviste";
+            String password="josecanalejas";
+            String bd = "prototipo";
+            String url="jdbc:mysql://212.145.194.162:3306/"+bd;     ///212.145.194.162
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            con = DriverManager.getConnection(url, userName, password);
+            System.out.println("Conexión a la BD");
+        } catch (Exception e) {
+            System.out.println("Error en conexión.");
+        }
+    }
+   
+    public void cerrarConexion() {
+        try {
+            con.close();
+            System.out.println("Conexión cerrada.");
+        } catch (SQLException e) {
+            System.out.println("Error al cerrar conexión.");
+        }
+    }
+   
+    //Consulta un campo de una fila con el parametro usuario
+    public String consultaUsu(String usuario) {
+        String dato="";
+        try {
+            st = con.createStatement();
+            rs = st.executeQuery("SELECT * FROM usuario where nick='"+usuario+"'");
+            System.out.println("Tabla abierta");
+            if ( rs.next())
+            dato=rs.getString("password");
+        } catch (SQLException e) {
+            System.out.println("Error al Abrir tabla.");
+          }
+        return dato;
+    }
+}  
+
 
