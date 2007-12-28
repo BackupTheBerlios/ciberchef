@@ -18,7 +18,7 @@
                         <div class="section">
                             <ui:panelLayout binding="#{Principal.principalPanel}" id="principalPanel" style="height: 334px; width: 454px">
                                 <ui:staticText binding="#{Principal.loginok}" id="loginok"
-                                    style="height: 72px; left: 72px; top: 72px; position: absolute; width: 312px" text="HAS HECHO LOGIN CORRECTO,&#xa;LO CUAL ME PARECE PERFECTO.&#xa;&#xa;xDIOOOOOOOOOOOOOOOOOOOOOOOS&#xa;&#xa;prueba de modificación"/>
+                                    style="height: 72px; left: 72px; top: 72px; position: absolute; width: 312px" text="HAS HECHO LOGIN CORRECTO,&#xa;LO CUAL ME PARECE PERFECTO.&#xa;&#xa;xDIOOOOOOOOOOOOOOOOOOOOOOOS&#xa;&#xa;prueba de modificación2"/>
                             </ui:panelLayout>
                         </div>
                         <div class="footer">
