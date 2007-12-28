@@ -19,7 +19,6 @@
                             <ui:panelLayout binding="#{Registro.panelReg1}" id="panelReg1" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 250px; top: 30px; position: absolute; width: 450px; -rave-layout: grid">
                                 <ui:textField binding="#{Registro.nombreReg1}" columns="30" id="nombreReg1" label="Nombre"
                                     style="right: 50px; top: 240px; position: absolute" valueChangeListener="#{Registro.nombreReg_processValueChange}"/>
-                                <ui:textField binding="#{Registro.apellidosReg1}" columns="30" id="apellidosReg1" label="Apellidos" style="right: 50px; top: 288px; position: absolute"/>
                                 <ui:textField binding="#{Registro.nickReg1}" columns="30" id="nickReg1" label="Nick" required="true" style="right: 50px; top: 48px; position: absolute"/>
                                 <ui:textField binding="#{Registro.emailReg1}" columns="30" id="emailReg1" label="Email" required="true" style="right: 50px; top: 192px; position: absolute"/>
                                 <ui:calendar binding="#{Registro.nacimientoReg1}" columns="25" id="nacimientoReg1" label="Fecha de Nacimiento" style="right: 50px; top: 336px; position: absolute"/>
@@ -32,6 +31,8 @@
                                     style="font-style: oblique; left: 48px; top: 430px; position: absolute" text="Campos obligatorios"/>
                                 <ui:staticText binding="#{Registro.staticText2}" id="staticText2"
                                     style="color: red; font-size: 24px; left: 30px; top: 430px; position: absolute" text="*"/>
+                                <ui:textField binding="#{Registro.pesoReg}" columns="4" id="pesoReg" label="Peso" style="left: 100px; top: 288px; position: absolute"/>
+                                <ui:textField binding="#{Registro.nivelReg}" columns="4" id="nivelReg" label="Nive de Cocina" style="right: 50px; top: 288px; position: absolute"/>
                             </ui:panelLayout>
                             <ui:panelLayout binding="#{Registro.tituloReg1}" id="tituloReg1" style="background-color: black; height: 40px; left: 280px; top: 20px; width: 128px">
                                 <ui:staticText binding="#{Registro.staticText3}" id="staticText3"
