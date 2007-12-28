@@ -16,7 +16,7 @@
                             <jsp:directive.include file="header.jspf"/>
                         </div>
                         <div class="section" style="height: 510px">
-                            <ui:panelLayout binding="#{Registro.panelReg1}" id="panelReg1" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 250px; top: 30px; position: absolute; width: 450px; -rave-layout: grid">
+                            <ui:panelLayout binding="#{Registro.panelReg}" id="panelReg" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 250px; top: 30px; position: absolute; width: 450px; -rave-layout: grid">
                                 <ui:textField binding="#{Registro.nombreReg1}" columns="30" id="nombreReg1" label="Nombre"
                                     style="right: 50px; top: 240px; position: absolute" valueChangeListener="#{Registro.nombreReg_processValueChange}"/>
                                 <ui:textField binding="#{Registro.nickReg1}" columns="30" id="nickReg1" label="Nick" required="true" style="right: 50px; top: 48px; position: absolute"/>
@@ -33,6 +33,8 @@
                                     style="color: red; font-size: 24px; left: 30px; top: 430px; position: absolute" text="*"/>
                                 <ui:textField binding="#{Registro.pesoReg}" columns="4" id="pesoReg" label="Peso" style="left: 100px; top: 288px; position: absolute"/>
                                 <ui:textField binding="#{Registro.nivelReg}" columns="4" id="nivelReg" label="Nive de Cocina" style="right: 50px; top: 288px; position: absolute"/>
+                                <ui:textField binding="#{Registro.pesoReg}" columns="4" id="pesoReg" label="Peso" style="position: absolute; left: 120px; top: 288px"/>
+                                <ui:textField binding="#{Registro.nivelReg}" columns="4" id="nivelReg" label="Nivel de Cocina" style="right: 50px; top: 288px; position: absolute"/>
                             </ui:panelLayout>
                             <ui:panelLayout binding="#{Registro.tituloReg1}" id="tituloReg1" style="background-color: black; height: 40px; left: 280px; top: 20px; width: 128px">
                                 <ui:staticText binding="#{Registro.staticText3}" id="staticText3"
@@ -42,6 +44,7 @@
                         <div class="footer">
                             <jsp:directive.include file="footer.jspf"/>
                         </div>
+                        <ui:textField binding="#{Registro.apellidosReg1}" id="apellidosReg1"/>
                     </ui:form>
                 </ui:body>
             </ui:html>
