@@ -12,10 +12,10 @@
                         <div class="topnavigation" style="">
                             <jsp:directive.include file="topnavigation.jspf"/>
                         </div>
-                        <div class="header">
+                        <div align="center" class="header">
                             <jsp:directive.include file="header.jspf"/>
                         </div>
-                        <div class="section" style="background-image: url(./resources/lineas.jpg); background-position: 50% 100%; background-repeat: repeat-x">
+                        <div align="center" class="section" style="background-image: url(./resources/lineas.jpg); background-position: 50% 100%; background-repeat: repeat-x">
                             <ui:panelLayout binding="#{Login.section}" id="section" style="height: 216px; position: relative; width: 360px; -rave-layout: grid">
                                 <ui:staticText binding="#{Login.staticText1}" id="staticText1"
                                     style="padding: 20px 30px 20px 20px; background-image: url(./resources/postit.jpg); background-repeat: no-repeat; height: 270px; left: 336px; top: 24px; position: absolute; width: 236px" text="Esto es una prueba de página de login.&#xa;Usuario:guest&#xa;Password:guest"/>
