@@ -111,74 +111,44 @@ public class Registro extends AbstractPageBean {
         this.layoutPanel1 = pl;
     }
 
-    private TextField nombreReg = new TextField();
+    private TextField nombreReg1 = new TextField();
 
-    public TextField getNombreReg() {
-        return nombreReg;
+    public TextField getNombreReg1() {
+        return nombreReg1;
     }
 
-    public void setNombreReg(TextField tf) {
-        this.nombreReg = tf;
+    public void setNombreReg1(TextField tf) {
+        this.nombreReg1 = tf;
     }
 
-    private TextField apellidosReg = new TextField();
+    private TextField apellidosReg1 = new TextField();
 
-    public TextField getApellidosReg() {
-        return apellidosReg;
+    public TextField getApellidosReg1() {
+        return apellidosReg1;
     }
 
-    public void setApellidosReg(TextField tf) {
-        this.apellidosReg = tf;
+    public void setApellidosReg1(TextField tf) {
+        this.apellidosReg1 = tf;
     }
 
-    private TextField nickReg = new TextField();
+    private TextField nickReg1 = new TextField();
 
-    public TextField getNickReg() {
-        return nickReg;
+    public TextField getNickReg1() {
+        return nickReg1;
     }
 
-    public void setNickReg(TextField tf) {
-        this.nickReg = tf;
+    public void setNickReg1(TextField tf) {
+        this.nickReg1 = tf;
     }
 
-    private TextField email = new TextField();
+    private TextField email1 = new TextField();
 
-    public TextField getEmail() {
-        return email;
+    public TextField getEmail1() {
+        return email1;
     }
 
-    public void setEmail(TextField tf) {
-        this.email = tf;
-    }
-
-    private Calendar nacimientoReg = new Calendar();
-
-    public Calendar getNacimientoReg() {
-        return nacimientoReg;
-    }
-
-    public void setNacimientoReg(Calendar c) {
-        this.nacimientoReg = c;
-    }
-
-    private PasswordField contraseñaReg = new PasswordField();
-
-    public PasswordField getContraseñaReg() {
-        return contraseñaReg;
-    }
-
-    public void setContraseñaReg(PasswordField pf) {
-        this.contraseñaReg = pf;
-    }
-
-    private PasswordField contraseñaRepReg = new PasswordField();
-
-    public PasswordField getContraseñaRepReg() {
-        return contraseñaRepReg;
-    }
-
-    public void setContraseñaRepReg(PasswordField pf) {
-        this.contraseñaRepReg = pf;
+    public void setEmail1(TextField tf) {
+        this.email1 = tf;
     }
 
     private Button enviarReg1 = new Button();
@@ -189,6 +159,36 @@ public class Registro extends AbstractPageBean {
 
     public void setEnviarReg1(Button b) {
         this.enviarReg1 = b;
+    }
+
+    private Calendar nacimientoReg1 = new Calendar();
+
+    public Calendar getNacimientoReg1() {
+        return nacimientoReg1;
+    }
+
+    public void setNacimientoReg1(Calendar c) {
+        this.nacimientoReg1 = c;
+    }
+
+    private PasswordField contraseñaRepReg1 = new PasswordField();
+
+    public PasswordField getContraseñaRepReg1() {
+        return contraseñaRepReg1;
+    }
+
+    public void setContraseñaRepReg1(PasswordField pf) {
+        this.contraseñaRepReg1 = pf;
+    }
+
+    private PasswordField contraseñaReg1 = new PasswordField();
+
+    public PasswordField getContraseñaReg1() {
+        return contraseñaReg1;
+    }
+
+    public void setContraseñaReg1(PasswordField pf) {
+        this.contraseñaReg1 = pf;
     }
     
     // </editor-fold>

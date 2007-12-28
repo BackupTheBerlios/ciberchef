@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document version="1.0">
-    <Node id="Login.jsp" x="88" y="160"/>
-    <Node id="Principal.jsp" x="88" y="256"/>
+    <Node id="Principal.jsp" x="80" y="296"/>
     <Node id="Registro.jsp" x="400" y="96"/>
+    <Node id="Login.jsp" x="88" y="160"/>
 </document>

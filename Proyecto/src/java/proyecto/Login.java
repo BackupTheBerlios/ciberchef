@@ -304,5 +304,11 @@ public class Login extends AbstractPageBean {
         // TODO: Replace with your code
         
     }
+
+    public String hyperlink1_action() {
+        // TODO: Replace with your code
+        
+        return "case1";
+    }
 }
 
