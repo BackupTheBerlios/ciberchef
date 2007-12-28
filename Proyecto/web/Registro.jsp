@@ -16,7 +16,7 @@
                             <jsp:directive.include file="header.jspf"/>
                         </div>
                         <div class="section" style="height: 510px">
-                            <ui:panelLayout binding="#{Registro.panelReg1}" id="panelReg1" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 250px; top: 30px; position: absolute; width: 400px; -rave-layout: grid">
+                            <ui:panelLayout binding="#{Registro.panelReg1}" id="panelReg1" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 450px; left: 100px; top: 30px; position: absolute; width: 75%; -rave-layout: grid; min-width: 400.0px;">
                                 <ui:textField binding="#{Registro.nombreReg1}" columns="30" id="nombreReg1" label="Nombre"
                                     style="right: 50px; top: 240px; position: absolute" valueChangeListener="#{Registro.nombreReg_processValueChange}"/>
                                 <ui:textField binding="#{Registro.apellidosReg1}" columns="30" id="apellidosReg1" label="Apellidos" style="right: 50px; top: 288px; position: absolute"/>
