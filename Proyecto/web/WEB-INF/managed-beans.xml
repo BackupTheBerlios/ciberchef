@@ -42,4 +42,9 @@
         <managed-bean-class>proyecto.Principal</managed-bean-class>
         <managed-bean-scope>request</managed-bean-scope>
     </managed-bean>
+    <managed-bean>
+        <managed-bean-name>Registro</managed-bean-name>
+        <managed-bean-class>proyecto.Registro</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
 </faces-config>

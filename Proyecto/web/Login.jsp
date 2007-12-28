@@ -19,7 +19,7 @@
                             <ui:panelLayout binding="#{Login.section}" id="section" style="height: 216px; position: relative; width: 360px; -rave-layout: grid">
                                 <ui:staticText binding="#{Login.staticText1}" id="staticText1"
                                     style="padding: 20px 30px 20px 20px; background-image: url(./resources/postit.jpg); background-repeat: no-repeat; height: 270px; left: 336px; top: 24px; position: absolute; width: 236px" text="Esto es una prueba de página de login.&#xa;Usuario:guest&#xa;Password:guest"/>
-                                <ui:panelLayout binding="#{Login.loginPanel}" id="loginPanel" style="border: 1px solid rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 166px; left: 24px; top: 48px; position: absolute; width: 286px; -rave-layout: grid">
+                                <ui:panelLayout binding="#{Login.loginPanel}" id="loginPanel" style="border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255); background-color: rgb(153, 204, 255); height: 166px; left: 24px; top: 48px; position: absolute; width: 286px; -rave-layout: grid">
                                     <ui:staticText binding="#{Login.errorlogin}" id="errorlogin" style="color: rgb(255, 0, 51)" text="Login Incorrecto" visible="false"/>
                                     <ui:textField binding="#{Login.user}" id="user" label="Usuario" style="right: 50px; top: 24px; position: absolute"/>
                                     <ui:passwordField binding="#{Login.pass}" id="pass" label="Password" style="right: 50px; top: 48px; position: absolute"/>
