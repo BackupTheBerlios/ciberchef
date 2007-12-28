@@ -16,9 +16,15 @@
                             <jsp:directive.include file="header.jspf"/>
                         </div>
                         <div class="section">
-                            <ui:panelLayout binding="#{Principal.principalPanel}" id="principalPanel" style="height: 334px; width: 454px">
-                                <ui:staticText binding="#{Principal.loginok}" id="loginok"
-                                    style="height: 72px; left: 72px; top: 72px; position: absolute; width: 312px" text="HAS HECHO LOGIN CORRECTO,&#xa;LO CUAL ME PARECE PERFECTO.&#xa;&#xa;xDIOOOOOOOOOOOOOOOOOOOOOOOS&#xa;&#xa;prueba de modificación2"/>
+                            <ui:panelLayout binding="#{Principal.principalPanel}" id="principalPanel" style="height: 382px; position: relative; width: 576px; -rave-layout: grid">
+                                <ui:imageHyperlink alt="Recetas" binding="#{Principal.linkRecetas}" id="linkRecetas" imageURL="/resources/btn_recetas.png" style="left: 240px; top: 120px; position: absolute"/>
+                                <ui:imageHyperlink alt="Preferencias" binding="#{Principal.linkPreferencias}" id="linkPreferencias"
+                                    imageURL="/resources/btn_preferencias.png" style="left: 336px; top: 24px; position: absolute"/>
+                                <ui:imageHyperlink alt="Grupos" binding="#{Principal.linkGrupos}" id="linkGrupos" imageURL="/resources/btn_grupos.png" style="left: 240px; top: 24px; position: absolute"/>
+                                <ui:imageHyperlink alt="Configurar" binding="#{Principal.linkConfigurar}" id="linkConfigurar"
+                                    imageURL="/resources/btn_configurar.png" style="left: 336px; top: 120px; position: absolute"/>
+                                <ui:imageHyperlink alt="Conectividad" binding="#{Principal.linkConectividad}" id="linkConectividad"
+                                    imageURL="/resources/btn_conectividad.png" style="left: 432px; top: 24px; position: absolute"/>
                             </ui:panelLayout>
                         </div>
                         <div class="footer">
