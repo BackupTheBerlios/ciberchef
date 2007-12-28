@@ -2,5 +2,5 @@
 <document version="1.0">
     <Node id="Login.jsp" x="88" y="160"/>
     <Node id="Principal.jsp" x="88" y="256"/>
-    <Node id="Charlie.jsp" x="240" y="96"/>
+    <Node id="Registro.jsp" x="400" y="96"/>
 </document>

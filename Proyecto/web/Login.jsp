@@ -25,7 +25,7 @@
                                     <ui:passwordField binding="#{Login.pass}" id="pass" label="Password" style="right: 50px; top: 48px; position: absolute"/>
                                     <ui:hyperlink binding="#{Login.hyperlink2}" id="hyperlink2"
                                         style="color: rgb(255, 255, 255); left: 24px; top: 96px; position: absolute" text="Olvidó su contraseña"/>
-                                    <ui:hyperlink binding="#{Login.hyperlink1}" id="hyperlink1"
+                                    <ui:hyperlink action="#{Login.hyperlink1_action}" binding="#{Login.hyperlink1}" id="hyperlink1"
                                         style="color: rgb(255, 255, 255); left: 24px; top: 120px; position: absolute" text="Registrarse"/>
                                     <ui:button action="#{Login.btn_login_action}" binding="#{Login.btn_login}" id="btn_login"
                                         style="right: 50px; top: 99px; position: absolute" text="Login"/>

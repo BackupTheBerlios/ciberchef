@@ -8,5 +8,9 @@
             <from-outcome>login</from-outcome>
             <to-view-id>/Principal.jsp</to-view-id>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>registro</from-outcome>
+            <to-view-id>/Registro.jsp</to-view-id>
+        </navigation-case>
     </navigation-rule>
 </faces-config>
