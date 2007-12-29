@@ -26,7 +26,6 @@ import javax.faces.component.html.HtmlPanelGrid;
 import javax.faces.event.ValueChangeEvent;
 import java.sql.*;
 import java.util.*;
-
 /**
  * <p>Page bean that corresponds to a similarly named JSP page.  This
  * class contains component definitions (and initialization code) for
