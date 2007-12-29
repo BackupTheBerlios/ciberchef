@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="background-color: rgb(51, 51, 51); height: 25px; width: 100%; -rave-layout: grid" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://www.sun.com/web/ui">
+    <br/>
+    <f:subview id="topnavigation">
+        <ui:hyperlink binding="#{topnavigation.enlace1}" id="enlace1" style="color: rgb(255, 255, 255); left: 480px; top: 5px; position: absolute" text="enlace 1"/>
+        <br/>
+        <ui:hyperlink action="#{topnavigation.enlace2_action}" binding="#{topnavigation.enlace2}" id="enlace2"
+            style="color: rgb(255, 255, 255); left: 552px; top: 5px; position: absolute" text="enlace 2"/>
+    </f:subview>
+</div>
